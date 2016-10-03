@@ -80,3 +80,5 @@ C:\Projects\GigHub\GigHub\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Projects\GigHub\GigHub\obj\Debug\GigHub.csprojResolveAssemblyReference.cache
 C:\Projects\GigHub\GigHub\obj\Debug\GigHub.dll
 C:\Projects\GigHub\GigHub\obj\Debug\GigHub.pdb
+C:\Projects\GigHub\GigHub\obj\Debug\GigHub.Migrations.InitialModel.resources
+C:\Projects\GigHub\GigHub\obj\Debug\GigHub.csproj.GenerateResource.Cache
