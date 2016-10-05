@@ -37,6 +37,26 @@ textarea {
     color: #fff;
 }
 
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+    background-color: rgba(205,40,39,0.55);
+}
+
+.dropdown-menu {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+
+}
+
+
+.navbar-inverse .navbar-nav > .dropdown > a .caret {
+    border-top-color: #fff;
+    border-bottom-color: #999999;
+}
+
+.navbar-brand {
+     font-size: 25px;
+        font-weight: 700;
+}
 
 body {
     font-size: 17px;
@@ -82,3 +102,4 @@ h6,
     -ms-border-radius: 9px;
     border-radius: 9px;
 }
+
