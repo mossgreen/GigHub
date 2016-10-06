@@ -26,7 +26,7 @@ namespace GigHub.ViewModels
         public IEnumerable<Genre> Genres { get; set; }
 
         public DateTime GetDateTime() {
-            return DateTime.Parse(string.Format("{0}{1}",Date,Time));
+            return DateTime.Parse($"{Date} {Time}");
         }
     }
 }
