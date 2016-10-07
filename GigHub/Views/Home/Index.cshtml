@@ -32,20 +32,19 @@
 @section scripts{
     <script>
         $(document)
-            .ready(function() {
+            .ready(function () {
                 $(".js-toggle-attendance")
-                    .click(function(e) {
+                    .click(function (e) {
 
                         var button = $(e.target);
-                        $.post("/api/attendances", {"":button.attr("data-gig-id")})
-                        .
-                        done(function() {
-                                $(button)
-                                    .removeClass("btn-default")
-                                    .addClass("btn-info")
-                                    .text("Going");
-                            })
-                            .fail(function() {
+                        $.post("/api/attendances", { "GigId": button.attr("data-gig-id") })
+                        .done(function () {
+                            button
+                                .removeClass("btn-default")
+                                .addClass("btn-info")
+                                .text("Going");
+                        })
+                            .fail(function () {
                                 alert("something wroing with attendance button.");
                             });
                     });
