@@ -87,3 +87,4 @@ C:\Projects\GigHub\GigHub\obj\Debug\GigHub.Migrations.OverrideConventionsForGigs
 C:\Projects\GigHub\GigHub\obj\Debug\GigHub.Migrations.PopulateGenresTable.resources
 C:\Projects\GigHub\GigHub\obj\Debug\GigHub.Migrations.AddForeignKeyPropertiesToGig.resources
 C:\Projects\GigHub\GigHub\obj\Debug\GigHub.Migrations.AddNameAttributeToApplicationUser.resources
+C:\Projects\GigHub\GigHub\obj\Debug\GigHub.Migrations.AddAttendance.resources
