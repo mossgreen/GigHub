@@ -108,3 +108,19 @@ h6,
     border-radius: 9px;
 }
 
+
+/*page-level styles*/
+
+.gigs {
+    list-style: none;
+}
+.gigs >li {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.gigs>li .details {
+    position: absolute;
+    top: 0;
+    left: 70px;
+}
