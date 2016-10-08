@@ -19,6 +19,7 @@
             <div class="details">
                 <span class="artist">
                     @gig.Artist.Name
+                    <button class="btn btn-link btn-sm js-toggle-follow" data-user-id="@gig.ArtistId">Follow</button>
                 </span>
                 <span class="genre">
                     @gig.Genre.Name
@@ -32,20 +33,35 @@
 @section scripts{
     <script>
         $(document)
-            .ready(function () {
+            .ready(function() {
                 $(".js-toggle-attendance")
-                    .click(function (e) {
+                    .click(function(e) {
 
                         var button = $(e.target);
                         $.post("/api/attendances", { "GigId": button.attr("data-gig-id") })
-                        .done(function () {
-                            button
-                                .removeClass("btn-default")
-                                .addClass("btn-info")
-                                .text("Going");
-                        })
-                            .fail(function () {
+                            .done(function() {
+                                button
+                                    .removeClass("btn-default")
+                                    .addClass("btn-info")
+                                    .text("Going");
+                            })
+                            .fail(function() {
                                 alert("something wroing with attendance button.");
+                            });
+                    });
+
+
+                $(".js-toggle-follow")
+                    .click(function(e) {
+                        var button = $(e.target);
+
+                        $.post("/api/followings",
+                                { followeeId: button.attr("data-user-id") })
+                            .done(function() {
+                                button.text("Following");
+                            })
+                            .fail(function() {
+                                alert("something wrong with toggle following.");
                             });
                     });
             });
