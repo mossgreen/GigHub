@@ -28,6 +28,14 @@ span.field-validation-error {
     font-weight: bold;
 }
 
+/*verticle offset*/
+.voffset{ margin-top: 2px;}
+.voffset1{ margin-top: 5px;}
+.voffset2{ margin-top: 10px;}
+.voffset3{ margin-top: 20px;}
+.voffset4{ margin-top: 40px;}
+.voffset5{ margin-top: 480px;}
+
 /*Bootstrap overrides*/
 .navbar-inverse {
     background-color: #ff4342;
