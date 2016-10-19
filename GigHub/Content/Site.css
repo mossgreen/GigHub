@@ -29,12 +29,29 @@ span.field-validation-error {
 }
 
 /*verticle offset*/
-.voffset{ margin-top: 2px;}
-.voffset1{ margin-top: 5px;}
-.voffset2{ margin-top: 10px;}
-.voffset3{ margin-top: 20px;}
-.voffset4{ margin-top: 40px;}
-.voffset5{ margin-top: 480px;}
+.voffset {
+    margin-top: 2px;
+}
+
+.voffset1 {
+    margin-top: 5px;
+}
+
+.voffset2 {
+    margin-top: 10px;
+}
+
+.voffset3 {
+    margin-top: 20px;
+}
+
+.voffset4 {
+    margin-top: 40px;
+}
+
+.voffset5 {
+    margin-top: 480px;
+}
 
 /*Bootstrap overrides*/
 .navbar-inverse {
@@ -164,3 +181,12 @@ h6,
             .gigs > li .details .genre {
                 font-size: 15px;
             }
+
+        .gigs > li .actions {
+            font-size: 15px;
+            display: none;
+        }
+
+        .gigs > li:hover .actions {
+            display: block;
+        }
