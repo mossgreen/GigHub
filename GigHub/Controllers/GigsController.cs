@@ -60,10 +60,14 @@ namespace GigHub.Controllers
         {
             var viewModel = new GigFormViewModel
             {
-                Genres = _context.Genres.ToList()
+                Genres = _context.Genres.ToList(),
+                Heading = "Add a Gig"
             };
 
-            return View(viewModel); // this view is under views/gigs/create
+            return View("GigForm",viewModel); 
+            // this view used to be views/gigs/create
+            //however, now both create and edit action is using it
+            //we reuse this view as "GigForm"
         }
 
         [Authorize]
@@ -74,6 +78,7 @@ namespace GigHub.Controllers
 
             var viewModel = new GigFormViewModel
             {
+                Heading = "Edit a Gig",
                 Genres = _context.Genres.ToList(),
                 Date = gig.DateTime.ToString("d MMM yyyy"),
                 Time = gig.DateTime.ToString("HH:mm"),
@@ -81,7 +86,7 @@ namespace GigHub.Controllers
                 Venue = gig.Venue
             };
 
-            return View("Create", viewModel);
+            return View("GigForm", viewModel);
             //return View(viewModel); // this view is under views/gigs/create
         }
 
@@ -93,7 +98,7 @@ namespace GigHub.Controllers
             if (!ModelState.IsValid)
             {
                 viewModel.Genres = _context.Genres.ToList();
-                return View("create", viewModel);
+                return View("GigForm", viewModel);
             }
 
 
