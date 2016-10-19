@@ -19,6 +19,20 @@ namespace GigHub.Controllers
         }
 
         [Authorize]
+        public ActionResult Mine()
+        {
+            var userId = User.Identity.GetUserId();
+            var gigs = _context
+                .Gigs
+                .Where(g => g.ArtistId == userId && g.DateTime > DateTime.Now)
+                .Include(g => g.Genre)
+                .ToList();
+
+            return View(gigs);
+        }
+
+
+        [Authorize]
         public ActionResult Attending()
         {
             //linq cannot implement it in SQL, so write it seperately
@@ -75,7 +89,7 @@ namespace GigHub.Controllers
             _context.Gigs.Add(gig);
             _context.SaveChanges();
 
-            return RedirectToAction("index", "Home");
+            return RedirectToAction("Mine", "Gigs");
         }
     }
 }
