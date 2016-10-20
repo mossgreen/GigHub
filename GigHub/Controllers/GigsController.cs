@@ -24,7 +24,10 @@ namespace GigHub.Controllers
             var userId = User.Identity.GetUserId();
             var gigs = _context
                 .Gigs
-                .Where(g => g.ArtistId == userId && g.DateTime > DateTime.Now)
+                .Where(g => 
+                    g.ArtistId == userId &&
+                    g.DateTime > DateTime.Now &&
+                    !g.IsCanceled)
                 .Include(g => g.Genre)
                 .ToList();
 
@@ -64,7 +67,7 @@ namespace GigHub.Controllers
                 Heading = "Add a Gig"
             };
 
-            return View("GigForm",viewModel); 
+            return View("GigForm", viewModel);
             // this view used to be views/gigs/create
             //however, now both create and edit action is using it
             //we reuse this view as "GigForm"
