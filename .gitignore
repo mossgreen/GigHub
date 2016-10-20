@@ -1,3 +1,6 @@
 *.mdf
 GigHub/App_Data/aspnet-GigHub-20161003090034_log.ldf
 *.ldf
+*.pdb
+*.dll
+*.suo
