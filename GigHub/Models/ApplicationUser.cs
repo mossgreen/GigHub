@@ -18,6 +18,7 @@ namespace GigHub.Models
 
         public ICollection<Following> Followers{ get; set; }
         public ICollection<Following> Followees { get; set; }
+        public ICollection<UserNotification> UserNotifications { get; set; }
 
         /*when you add a property to a class, and property is a collection,
          you should always initialize it in the constructor,
@@ -26,6 +27,7 @@ namespace GigHub.Models
         {
             Followers = new Collection<Following>();
             Followees = new Collection<Following>();
+            UserNotifications = new Collection<UserNotification>();
         }
 
         public async Task<ClaimsIdentity> GenerateUserIdentityAsync(UserManager<ApplicationUser> manager)
@@ -34,6 +36,12 @@ namespace GigHub.Models
             var userIdentity = await manager.CreateIdentityAsync(this, DefaultAuthenticationTypes.ApplicationCookie);
             // Add custom user claims here
             return userIdentity;
+        }
+
+        public void Notify(Notification notification)
+        {
+            var userNotification = new UserNotification(this, notification);
+            UserNotifications.Add(userNotification);
         }
     }
 }
