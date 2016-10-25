@@ -32,17 +32,8 @@ namespace GigHub.Controllers.Api
             if(gig.IsCanceled)
                 return NotFound();
 
-            gig.IsCanceled = true;
-
-            //if gig is cancelled, create a notification
-            var notification = new Notification(NotificationType.GigCanceled, gig);
-
-            //iterate attendees, create notification for each of them
-            foreach (var attendee in gig.Attendances.Select(a => a.Attendee))
-            {
-                attendee.Notify(notification);
-            }
-
+            gig.Cancel();
+           
             _context.SaveChanges();
 
             return Ok();
