@@ -32,12 +32,7 @@ namespace GigHub.Controllers.Api
             gig.IsCanceled = true;
 
             //if gig is cancelled, create a notification
-            var notification = new Notification
-            {
-                DateTime = DateTime.Now,
-                Gig = gig,
-                Type = NotificationType.GigCanceled
-            };
+            var notification = new Notification(NotificationType.GigCanceled, gig);
 
             //find people who attend it
             var attendees = _context.Attendances
