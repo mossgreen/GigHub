@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data.Entity;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -24,7 +25,9 @@ namespace GigHub.Controllers.Api
         public IHttpActionResult Cancel(int id)
         {
             var userId = User.Identity.GetUserId();
-            var gig = _context.Gigs.Single(g => g.Id == id && g.ArtistId == userId);
+            var gig = _context.Gigs
+                .Include(g => g.Attendances.Select(a => a.Attendee))
+                .Single(g => g.Id == id && g.ArtistId == userId);
 
             if(gig.IsCanceled)
                 return NotFound();
@@ -34,14 +37,8 @@ namespace GigHub.Controllers.Api
             //if gig is cancelled, create a notification
             var notification = new Notification(NotificationType.GigCanceled, gig);
 
-            //find people who attend it
-            var attendees = _context.Attendances
-                .Where(a => a.GigId == gig.Id)
-                .Select(a => a.Attendee)
-                .ToList();
-
             //iterate attendees, create notification for each of them
-            foreach (var attendee in attendees)
+            foreach (var attendee in gig.Attendances.Select(a => a.Attendee))
             {
                 attendee.Notify(notification);
             }
