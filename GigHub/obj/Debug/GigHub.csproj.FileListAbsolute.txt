@@ -97,3 +97,5 @@ C:\Projects\GigHub\GigHub\bin\System.Web.Http.WebHost.xml
 C:\Projects\GigHub\GigHub\obj\Debug\GigHub.Migrations.AddFollowing.resources
 C:\Projects\GigHub\GigHub\obj\Debug\GigHub.Migrations.AddIsCanceledToGig.resources
 C:\Projects\GigHub\GigHub\obj\Debug\GigHub.Migrations.AddNotification.resources
+C:\Projects\GigHub\GigHub\bin\AutoMapper.dll
+C:\Projects\GigHub\GigHub\bin\AutoMapper.xml
