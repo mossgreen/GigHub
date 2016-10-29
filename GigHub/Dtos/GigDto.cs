@@ -1,7 +1,7 @@
 ﻿using System;
-using GigHub.Models;
+using GigHub.Controllers.Api;
 
-namespace GigHub.Controllers.Api
+namespace GigHub.Dtos
 {
     public class GigDto
     {
