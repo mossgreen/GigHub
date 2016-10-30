@@ -9,24 +9,19 @@ namespace GigHub.Controllers.Api
     [Authorize]
     public class AttendancesController : ApiController
     {
-
-        private ApplicationDbContext _contex;
+        private ApplicationDbContext _context;
 
         public AttendancesController()
         {
-            _contex = new ApplicationDbContext();
+            _context = new ApplicationDbContext();
         }
 
         [HttpPost]
         public IHttpActionResult Attend(AttendanceDto dto)
         {
-
             var userId = User.Identity.GetUserId();
 
-            var exists = _contex.Attendances.
-                Any(a => a.AttendeeId == userId && a.GigId == dto.GigId);
-
-            if(exists)
+            if (_context.Attendances.Any(a => a.AttendeeId == userId && a.GigId == dto.GigId))
                 return BadRequest("The attendance already exists.");
 
             var attendance = new Attendance
@@ -34,9 +29,8 @@ namespace GigHub.Controllers.Api
                 GigId = dto.GigId,
                 AttendeeId = userId
             };
-
-            _contex.Attendances.Add(attendance);
-            _contex.SaveChanges();
+            _context.Attendances.Add(attendance);
+            _context.SaveChanges();
 
             return Ok();
         }
