@@ -9,7 +9,8 @@ namespace GigHub.Controllers.Api
     [Authorize]
     public class FollowingsController : ApiController
     {
-        public ApplicationDbContext _context { get; set; }
+        private ApplicationDbContext _context;
+
 
         public FollowingsController()
         {
