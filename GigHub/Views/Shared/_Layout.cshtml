@@ -57,7 +57,16 @@
                 $getJSON("/api/notification", function (notifications) {
                     $(".js-notifications-count")
                         .text(notifications.length)
-                        .removeClass("hide");
+                        .removeClass("hide")
+                        .addClass("animated bouncedInDown");
+                });
+                $(".notifications").popover({
+                    html: true,
+                    title: "Notifications",
+                    content:function() {
+                        return "Hellow World";
+                    },
+                    placement: "bottom"
                 });
             });
     </script>
