@@ -7,12 +7,16 @@
 @using (Html.BeginForm("Search", "Gigs"))
 {
     <div class="form-group">
-        @Html.TextBoxFor(m => m.SearchTerm, new {@class="form-control"})
+        <div class="input-group" id="searchGigs">
+            @Html.TextBoxFor(m => m.SearchTerm, new { @class = "form-control" })
+            <span class="input-group-addon">
+                <i class="glyphicon glyphicon-search"></i>
+            </span>
+        </div>
     </div>
-    <input type="submit" value="Search"/>
 }
 
-<ul class="gigs voffset4" >
+<ul class="gigs voffset4">
     @foreach (var gig in Model.UpcomingGigs)
     {
         <li>
@@ -27,7 +31,7 @@
             <div class="details">
                 <span class="artist">
                     @gig.Artist.Name
-                    
+
                     @if (gig.IsCanceled)
                     {
                         <span class="label label-warning">Canceled</span>
