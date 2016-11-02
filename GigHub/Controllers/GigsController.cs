@@ -143,5 +143,10 @@ namespace GigHub.Controllers
 
             return RedirectToAction("Mine", "Gigs");
         }
+
+        public ActionResult Search()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
