@@ -144,9 +144,10 @@ namespace GigHub.Controllers
             return RedirectToAction("Mine", "Gigs");
         }
 
-        public ActionResult Search()
+        [HttpPost]
+        public ActionResult Search(GigsViewModel viewModel)
         {
-            throw new NotImplementedException();
+            return RedirectToAction("Index", "Home", new {query = viewModel.SearchTerm});
         }
     }
 }
