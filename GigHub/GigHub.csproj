@@ -217,6 +217,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\Api\FollowingsController.cs" />
     <Compile Include="Controllers\FolloweesController.cs" />
+    <Compile Include="Controllers\GigDetailsViewModel.cs" />
     <Compile Include="Dtos\GenreDto.cs" />
     <Compile Include="Dtos\GigDto.cs" />
     <Compile Include="Controllers\Api\GigsController.cs" />
@@ -369,6 +370,7 @@
     <Content Include="Service References\Application Insights\ConnectedService.json" />
     <Content Include="Views\Gigs\GigForm.cshtml" />
     <Content Include="Views\Gigs\Mine.cshtml" />
+    <None Include="Views\Gigs\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
