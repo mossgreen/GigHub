@@ -79,7 +79,7 @@
                                         .text("Going");
                                 })
                                 .fail(function() {
-                                    alert("something wroing with attendance button.");
+                                    alert("something wrong with attendance button.");
                                 });
 
                         } else {
@@ -87,15 +87,15 @@
                                     url: "/api/attendances/" + button.attr("data-gig-id"),
                                     mothod: "DELETE"
                                 })
-                        .done(function() {
+                                .done(function() {
                                     button
                                         .removeClass("btn-info")
                                         .addClass("btn-default")
                                         .text("Going?");
                                 })
-                        .fail(function() {
-                            alert("something wroing with attendance button.");
-                                })
+                                .fail(function() {
+                                    alert("something wrong with attendance button.");
+                                });
                         }
                     });
 
