@@ -84,18 +84,18 @@
 
                         } else {
                             $.ajax({
-                                    url: "/api/attendances/" + button.attr("data-gig-id"),
-                                    mothod: "DELETE"
-                                })
-                                .done(function() {
-                                    button
-                                        .removeClass("btn-info")
-                                        .addClass("btn-default")
-                                        .text("Going?");
-                                })
-                                .fail(function() {
-                                    alert("something wrong with attendance button.");
-                                });
+                                url: "/api/attendances/" + button.attr("data-gig-id"),
+                                method: "DELETE"
+                            })
+                                                    .done(function () {
+                                                        button
+                                                            .removeClass("btn-info")
+                                                            .addClass("btn-default")
+                                                            .text("Going?");
+                                                    })
+                                                    .fail(function () {
+                                                        alert("Something failed");
+                                                    });
                         }
                     });
 
