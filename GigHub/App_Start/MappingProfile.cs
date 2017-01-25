@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using AutoMapper;
+﻿using AutoMapper;
 using GigHub.Controllers.Api;
 using GigHub.Dtos;
 using GigHub.Models;

@@ -1,16 +1,12 @@
 ﻿using System;
 using System.Data.Entity;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
-using System.Web.Http;
 using GigHub.Models;
 using Microsoft.AspNet.Identity;
+using System.Linq;
+using System.Web.Http;
 
 namespace GigHub.Controllers.Api
 {
-
     [Authorize]
     public class GigsController : ApiController
     {
@@ -28,12 +24,12 @@ namespace GigHub.Controllers.Api
             var gig = _context.Gigs
                 .Include(g => g.Attendances.Select(a => a.Attendee))
                 .Single(g => g.Id == id && g.ArtistId == userId);
-
-            if(gig.IsCanceled)
+            
+            if (gig.IsCanceled)
                 return NotFound();
 
             gig.Cancel();
-           
+
             _context.SaveChanges();
 
             return Ok();

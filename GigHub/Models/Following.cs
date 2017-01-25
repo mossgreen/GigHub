@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Web;
 
 namespace GigHub.Models
 {
-    //alternatively, this class could be called relationship
+    // Alternatively, this class could be called Relationship.
     public class Following
     {
         [Key]

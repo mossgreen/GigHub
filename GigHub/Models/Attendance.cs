@@ -1,16 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Web;
 
 namespace GigHub.Models
 {
     public class Attendance
     {
         public Gig Gig { get; set; }
-
         public ApplicationUser Attendee { get; set; }
 
         [Key]
@@ -19,7 +14,6 @@ namespace GigHub.Models
 
         [Key]
         [Column(Order = 2)]
-        public string AttendeeId { get; set; } // applicationUser's Id is a GUID string
-
+        public string AttendeeId { get; set; }
     }
 }

@@ -1,33 +1,12 @@
-C:\Projects\GigHub\GigHub\bin\ApplicationInsights.config
-C:\Projects\GigHub\GigHub\bin\roslyn\csc.exe
-C:\Projects\GigHub\GigHub\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-C:\Projects\GigHub\GigHub\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-C:\Projects\GigHub\GigHub\bin\roslyn\Microsoft.CodeAnalysis.dll
-C:\Projects\GigHub\GigHub\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-C:\Projects\GigHub\GigHub\bin\roslyn\Microsoft.CSharp.Core.targets
-C:\Projects\GigHub\GigHub\bin\roslyn\Microsoft.VisualBasic.Core.targets
-C:\Projects\GigHub\GigHub\bin\roslyn\System.Collections.Immutable.dll
-C:\Projects\GigHub\GigHub\bin\roslyn\System.Reflection.Metadata.dll
-C:\Projects\GigHub\GigHub\bin\roslyn\vbc.exe
-C:\Projects\GigHub\GigHub\bin\roslyn\VBCSCompiler.exe
-C:\Projects\GigHub\GigHub\bin\roslyn\VBCSCompiler.exe.config
 C:\Projects\GigHub\GigHub\bin\GigHub.dll.config
 C:\Projects\GigHub\GigHub\bin\GigHub.dll
 C:\Projects\GigHub\GigHub\bin\GigHub.pdb
 C:\Projects\GigHub\GigHub\bin\Antlr3.Runtime.dll
 C:\Projects\GigHub\GigHub\bin\EntityFramework.dll
 C:\Projects\GigHub\GigHub\bin\EntityFramework.SqlServer.dll
-C:\Projects\GigHub\GigHub\bin\Microsoft.AI.Agent.Intercept.dll
-C:\Projects\GigHub\GigHub\bin\Microsoft.AI.DependencyCollector.dll
-C:\Projects\GigHub\GigHub\bin\Microsoft.AI.PerfCounterCollector.dll
-C:\Projects\GigHub\GigHub\bin\Microsoft.AI.ServerTelemetryChannel.dll
-C:\Projects\GigHub\GigHub\bin\Microsoft.AI.Web.dll
-C:\Projects\GigHub\GigHub\bin\Microsoft.AI.WindowsServer.dll
-C:\Projects\GigHub\GigHub\bin\Microsoft.ApplicationInsights.dll
 C:\Projects\GigHub\GigHub\bin\Microsoft.AspNet.Identity.Core.dll
 C:\Projects\GigHub\GigHub\bin\Microsoft.AspNet.Identity.EntityFramework.dll
 C:\Projects\GigHub\GigHub\bin\Microsoft.AspNet.Identity.Owin.dll
-C:\Projects\GigHub\GigHub\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Projects\GigHub\GigHub\bin\Microsoft.Owin.dll
 C:\Projects\GigHub\GigHub\bin\Microsoft.Owin.Host.SystemWeb.dll
 C:\Projects\GigHub\GigHub\bin\Microsoft.Owin.Security.Cookies.dll
@@ -48,12 +27,6 @@ C:\Projects\GigHub\GigHub\bin\System.Web.WebPages.Deployment.dll
 C:\Projects\GigHub\GigHub\bin\System.Web.WebPages.dll
 C:\Projects\GigHub\GigHub\bin\System.Web.WebPages.Razor.dll
 C:\Projects\GigHub\GigHub\bin\WebGrease.dll
-C:\Projects\GigHub\GigHub\bin\Microsoft.AI.DependencyCollector.xml
-C:\Projects\GigHub\GigHub\bin\Microsoft.AI.ServerTelemetryChannel.xml
-C:\Projects\GigHub\GigHub\bin\Microsoft.AI.Web.xml
-C:\Projects\GigHub\GigHub\bin\Microsoft.AI.WindowsServer.xml
-C:\Projects\GigHub\GigHub\bin\Microsoft.ApplicationInsights.xml
-C:\Projects\GigHub\GigHub\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Projects\GigHub\GigHub\bin\System.Web.Helpers.xml
 C:\Projects\GigHub\GigHub\bin\System.Web.Mvc.xml
 C:\Projects\GigHub\GigHub\bin\System.Web.Optimization.xml
@@ -77,7 +50,6 @@ C:\Projects\GigHub\GigHub\bin\Microsoft.Owin.Security.OAuth.xml
 C:\Projects\GigHub\GigHub\bin\Microsoft.Owin.Security.Google.xml
 C:\Projects\GigHub\GigHub\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Projects\GigHub\GigHub\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-C:\Projects\GigHub\GigHub\obj\Debug\GigHub.csprojResolveAssemblyReference.cache
 C:\Projects\GigHub\GigHub\obj\Debug\GigHub.dll
 C:\Projects\GigHub\GigHub\obj\Debug\GigHub.pdb
 C:\Projects\GigHub\GigHub\obj\Debug\GigHub.Migrations.InitialModel.resources
@@ -86,7 +58,8 @@ C:\Projects\GigHub\GigHub\obj\Debug\GigHub.Migrations.CreateGigTable.resources
 C:\Projects\GigHub\GigHub\obj\Debug\GigHub.Migrations.OverrideConventionsForGigsAndGenres.resources
 C:\Projects\GigHub\GigHub\obj\Debug\GigHub.Migrations.PopulateGenresTable.resources
 C:\Projects\GigHub\GigHub\obj\Debug\GigHub.Migrations.AddForeignKeyPropertiesToGig.resources
-C:\Projects\GigHub\GigHub\obj\Debug\GigHub.Migrations.AddNameAttributeToApplicationUser.resources
+C:\Projects\GigHub\GigHub\obj\Debug\GigHub.csprojResolveAssemblyReference.cache
+C:\Projects\GigHub\GigHub\obj\Debug\GigHub.Migrations.AddNameToApplicationUser.resources
 C:\Projects\GigHub\GigHub\obj\Debug\GigHub.Migrations.AddAttendance.resources
 C:\Projects\GigHub\GigHub\bin\System.Net.Http.Formatting.dll
 C:\Projects\GigHub\GigHub\bin\System.Web.Http.dll
@@ -99,3 +72,77 @@ C:\Projects\GigHub\GigHub\obj\Debug\GigHub.Migrations.AddIsCanceledToGig.resourc
 C:\Projects\GigHub\GigHub\obj\Debug\GigHub.Migrations.AddNotification.resources
 C:\Projects\GigHub\GigHub\bin\AutoMapper.dll
 C:\Projects\GigHub\GigHub\bin\AutoMapper.xml
+\\vmware-host\Shared Folders\Downloads\Coding\full-stack-dot-net-developer-architecture-testing\3-exercise-files\Before\GigHub\bin\GigHub.dll.config
+\\vmware-host\Shared Folders\Downloads\Coding\full-stack-dot-net-developer-architecture-testing\3-exercise-files\Before\GigHub\bin\GigHub.dll
+\\vmware-host\Shared Folders\Downloads\Coding\full-stack-dot-net-developer-architecture-testing\3-exercise-files\Before\GigHub\bin\GigHub.pdb
+\\vmware-host\Shared Folders\Downloads\Coding\full-stack-dot-net-developer-architecture-testing\3-exercise-files\Before\GigHub\bin\Antlr3.Runtime.dll
+\\vmware-host\Shared Folders\Downloads\Coding\full-stack-dot-net-developer-architecture-testing\3-exercise-files\Before\GigHub\bin\AutoMapper.dll
+\\vmware-host\Shared Folders\Downloads\Coding\full-stack-dot-net-developer-architecture-testing\3-exercise-files\Before\GigHub\bin\EntityFramework.dll
+\\vmware-host\Shared Folders\Downloads\Coding\full-stack-dot-net-developer-architecture-testing\3-exercise-files\Before\GigHub\bin\EntityFramework.SqlServer.dll
+\\vmware-host\Shared Folders\Downloads\Coding\full-stack-dot-net-developer-architecture-testing\3-exercise-files\Before\GigHub\bin\Microsoft.AspNet.Identity.Core.dll
+\\vmware-host\Shared Folders\Downloads\Coding\full-stack-dot-net-developer-architecture-testing\3-exercise-files\Before\GigHub\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+\\vmware-host\Shared Folders\Downloads\Coding\full-stack-dot-net-developer-architecture-testing\3-exercise-files\Before\GigHub\bin\Microsoft.AspNet.Identity.Owin.dll
+\\vmware-host\Shared Folders\Downloads\Coding\full-stack-dot-net-developer-architecture-testing\3-exercise-files\Before\GigHub\bin\Microsoft.Owin.dll
+\\vmware-host\Shared Folders\Downloads\Coding\full-stack-dot-net-developer-architecture-testing\3-exercise-files\Before\GigHub\bin\Microsoft.Owin.Host.SystemWeb.dll
+\\vmware-host\Shared Folders\Downloads\Coding\full-stack-dot-net-developer-architecture-testing\3-exercise-files\Before\GigHub\bin\Microsoft.Owin.Security.Cookies.dll
+\\vmware-host\Shared Folders\Downloads\Coding\full-stack-dot-net-developer-architecture-testing\3-exercise-files\Before\GigHub\bin\Microsoft.Owin.Security.dll
+\\vmware-host\Shared Folders\Downloads\Coding\full-stack-dot-net-developer-architecture-testing\3-exercise-files\Before\GigHub\bin\Microsoft.Owin.Security.Facebook.dll
+\\vmware-host\Shared Folders\Downloads\Coding\full-stack-dot-net-developer-architecture-testing\3-exercise-files\Before\GigHub\bin\Microsoft.Owin.Security.Google.dll
+\\vmware-host\Shared Folders\Downloads\Coding\full-stack-dot-net-developer-architecture-testing\3-exercise-files\Before\GigHub\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+\\vmware-host\Shared Folders\Downloads\Coding\full-stack-dot-net-developer-architecture-testing\3-exercise-files\Before\GigHub\bin\Microsoft.Owin.Security.OAuth.dll
+\\vmware-host\Shared Folders\Downloads\Coding\full-stack-dot-net-developer-architecture-testing\3-exercise-files\Before\GigHub\bin\Microsoft.Owin.Security.Twitter.dll
+\\vmware-host\Shared Folders\Downloads\Coding\full-stack-dot-net-developer-architecture-testing\3-exercise-files\Before\GigHub\bin\Microsoft.Web.Infrastructure.dll
+\\vmware-host\Shared Folders\Downloads\Coding\full-stack-dot-net-developer-architecture-testing\3-exercise-files\Before\GigHub\bin\Newtonsoft.Json.dll
+\\vmware-host\Shared Folders\Downloads\Coding\full-stack-dot-net-developer-architecture-testing\3-exercise-files\Before\GigHub\bin\Owin.dll
+\\vmware-host\Shared Folders\Downloads\Coding\full-stack-dot-net-developer-architecture-testing\3-exercise-files\Before\GigHub\bin\System.Net.Http.Formatting.dll
+\\vmware-host\Shared Folders\Downloads\Coding\full-stack-dot-net-developer-architecture-testing\3-exercise-files\Before\GigHub\bin\System.Web.Helpers.dll
+\\vmware-host\Shared Folders\Downloads\Coding\full-stack-dot-net-developer-architecture-testing\3-exercise-files\Before\GigHub\bin\System.Web.Http.dll
+\\vmware-host\Shared Folders\Downloads\Coding\full-stack-dot-net-developer-architecture-testing\3-exercise-files\Before\GigHub\bin\System.Web.Http.WebHost.dll
+\\vmware-host\Shared Folders\Downloads\Coding\full-stack-dot-net-developer-architecture-testing\3-exercise-files\Before\GigHub\bin\System.Web.Mvc.dll
+\\vmware-host\Shared Folders\Downloads\Coding\full-stack-dot-net-developer-architecture-testing\3-exercise-files\Before\GigHub\bin\System.Web.Optimization.dll
+\\vmware-host\Shared Folders\Downloads\Coding\full-stack-dot-net-developer-architecture-testing\3-exercise-files\Before\GigHub\bin\System.Web.Razor.dll
+\\vmware-host\Shared Folders\Downloads\Coding\full-stack-dot-net-developer-architecture-testing\3-exercise-files\Before\GigHub\bin\System.Web.WebPages.Deployment.dll
+\\vmware-host\Shared Folders\Downloads\Coding\full-stack-dot-net-developer-architecture-testing\3-exercise-files\Before\GigHub\bin\System.Web.WebPages.dll
+\\vmware-host\Shared Folders\Downloads\Coding\full-stack-dot-net-developer-architecture-testing\3-exercise-files\Before\GigHub\bin\System.Web.WebPages.Razor.dll
+\\vmware-host\Shared Folders\Downloads\Coding\full-stack-dot-net-developer-architecture-testing\3-exercise-files\Before\GigHub\bin\WebGrease.dll
+\\vmware-host\Shared Folders\Downloads\Coding\full-stack-dot-net-developer-architecture-testing\3-exercise-files\Before\GigHub\bin\AutoMapper.xml
+\\vmware-host\Shared Folders\Downloads\Coding\full-stack-dot-net-developer-architecture-testing\3-exercise-files\Before\GigHub\bin\System.Net.Http.Formatting.xml
+\\vmware-host\Shared Folders\Downloads\Coding\full-stack-dot-net-developer-architecture-testing\3-exercise-files\Before\GigHub\bin\System.Web.Http.xml
+\\vmware-host\Shared Folders\Downloads\Coding\full-stack-dot-net-developer-architecture-testing\3-exercise-files\Before\GigHub\bin\System.Web.Http.WebHost.xml
+\\vmware-host\Shared Folders\Downloads\Coding\full-stack-dot-net-developer-architecture-testing\3-exercise-files\Before\GigHub\bin\System.Web.Helpers.xml
+\\vmware-host\Shared Folders\Downloads\Coding\full-stack-dot-net-developer-architecture-testing\3-exercise-files\Before\GigHub\bin\System.Web.Mvc.xml
+\\vmware-host\Shared Folders\Downloads\Coding\full-stack-dot-net-developer-architecture-testing\3-exercise-files\Before\GigHub\bin\System.Web.Optimization.xml
+\\vmware-host\Shared Folders\Downloads\Coding\full-stack-dot-net-developer-architecture-testing\3-exercise-files\Before\GigHub\bin\System.Web.Razor.xml
+\\vmware-host\Shared Folders\Downloads\Coding\full-stack-dot-net-developer-architecture-testing\3-exercise-files\Before\GigHub\bin\System.Web.WebPages.xml
+\\vmware-host\Shared Folders\Downloads\Coding\full-stack-dot-net-developer-architecture-testing\3-exercise-files\Before\GigHub\bin\System.Web.WebPages.Deployment.xml
+\\vmware-host\Shared Folders\Downloads\Coding\full-stack-dot-net-developer-architecture-testing\3-exercise-files\Before\GigHub\bin\System.Web.WebPages.Razor.xml
+\\vmware-host\Shared Folders\Downloads\Coding\full-stack-dot-net-developer-architecture-testing\3-exercise-files\Before\GigHub\bin\Antlr3.Runtime.pdb
+\\vmware-host\Shared Folders\Downloads\Coding\full-stack-dot-net-developer-architecture-testing\3-exercise-files\Before\GigHub\bin\Newtonsoft.Json.xml
+\\vmware-host\Shared Folders\Downloads\Coding\full-stack-dot-net-developer-architecture-testing\3-exercise-files\Before\GigHub\bin\EntityFramework.xml
+\\vmware-host\Shared Folders\Downloads\Coding\full-stack-dot-net-developer-architecture-testing\3-exercise-files\Before\GigHub\bin\EntityFramework.SqlServer.xml
+\\vmware-host\Shared Folders\Downloads\Coding\full-stack-dot-net-developer-architecture-testing\3-exercise-files\Before\GigHub\bin\Microsoft.AspNet.Identity.Core.xml
+\\vmware-host\Shared Folders\Downloads\Coding\full-stack-dot-net-developer-architecture-testing\3-exercise-files\Before\GigHub\bin\Microsoft.AspNet.Identity.Owin.xml
+\\vmware-host\Shared Folders\Downloads\Coding\full-stack-dot-net-developer-architecture-testing\3-exercise-files\Before\GigHub\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+\\vmware-host\Shared Folders\Downloads\Coding\full-stack-dot-net-developer-architecture-testing\3-exercise-files\Before\GigHub\bin\Microsoft.Owin.xml
+\\vmware-host\Shared Folders\Downloads\Coding\full-stack-dot-net-developer-architecture-testing\3-exercise-files\Before\GigHub\bin\Microsoft.Owin.Host.SystemWeb.xml
+\\vmware-host\Shared Folders\Downloads\Coding\full-stack-dot-net-developer-architecture-testing\3-exercise-files\Before\GigHub\bin\Microsoft.Owin.Security.xml
+\\vmware-host\Shared Folders\Downloads\Coding\full-stack-dot-net-developer-architecture-testing\3-exercise-files\Before\GigHub\bin\Microsoft.Owin.Security.Facebook.xml
+\\vmware-host\Shared Folders\Downloads\Coding\full-stack-dot-net-developer-architecture-testing\3-exercise-files\Before\GigHub\bin\Microsoft.Owin.Security.Cookies.xml
+\\vmware-host\Shared Folders\Downloads\Coding\full-stack-dot-net-developer-architecture-testing\3-exercise-files\Before\GigHub\bin\Microsoft.Owin.Security.OAuth.xml
+\\vmware-host\Shared Folders\Downloads\Coding\full-stack-dot-net-developer-architecture-testing\3-exercise-files\Before\GigHub\bin\Microsoft.Owin.Security.Google.xml
+\\vmware-host\Shared Folders\Downloads\Coding\full-stack-dot-net-developer-architecture-testing\3-exercise-files\Before\GigHub\bin\Microsoft.Owin.Security.Twitter.xml
+\\vmware-host\Shared Folders\Downloads\Coding\full-stack-dot-net-developer-architecture-testing\3-exercise-files\Before\GigHub\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+\\vmware-host\Shared Folders\Downloads\Coding\full-stack-dot-net-developer-architecture-testing\3-exercise-files\Before\GigHub\obj\Debug\GigHub.csprojResolveAssemblyReference.cache
+\\vmware-host\Shared Folders\Downloads\Coding\full-stack-dot-net-developer-architecture-testing\3-exercise-files\Before\GigHub\obj\Debug\GigHub.Migrations.InitialModel.resources
+\\vmware-host\Shared Folders\Downloads\Coding\full-stack-dot-net-developer-architecture-testing\3-exercise-files\Before\GigHub\obj\Debug\GigHub.Migrations.CreateGigTable.resources
+\\vmware-host\Shared Folders\Downloads\Coding\full-stack-dot-net-developer-architecture-testing\3-exercise-files\Before\GigHub\obj\Debug\GigHub.Migrations.OverrideConventionsForGigsAndGenres.resources
+\\vmware-host\Shared Folders\Downloads\Coding\full-stack-dot-net-developer-architecture-testing\3-exercise-files\Before\GigHub\obj\Debug\GigHub.Migrations.PopulateGenresTable.resources
+\\vmware-host\Shared Folders\Downloads\Coding\full-stack-dot-net-developer-architecture-testing\3-exercise-files\Before\GigHub\obj\Debug\GigHub.Migrations.AddForeignKeyPropertiesToGig.resources
+\\vmware-host\Shared Folders\Downloads\Coding\full-stack-dot-net-developer-architecture-testing\3-exercise-files\Before\GigHub\obj\Debug\GigHub.Migrations.AddNameToApplicationUser.resources
+\\vmware-host\Shared Folders\Downloads\Coding\full-stack-dot-net-developer-architecture-testing\3-exercise-files\Before\GigHub\obj\Debug\GigHub.Migrations.AddAttendance.resources
+\\vmware-host\Shared Folders\Downloads\Coding\full-stack-dot-net-developer-architecture-testing\3-exercise-files\Before\GigHub\obj\Debug\GigHub.Migrations.AddFollowing.resources
+\\vmware-host\Shared Folders\Downloads\Coding\full-stack-dot-net-developer-architecture-testing\3-exercise-files\Before\GigHub\obj\Debug\GigHub.Migrations.AddIsCanceledToGig.resources
+\\vmware-host\Shared Folders\Downloads\Coding\full-stack-dot-net-developer-architecture-testing\3-exercise-files\Before\GigHub\obj\Debug\GigHub.Migrations.AddNotification.resources
+\\vmware-host\Shared Folders\Downloads\Coding\full-stack-dot-net-developer-architecture-testing\3-exercise-files\Before\GigHub\obj\Debug\GigHub.csproj.GenerateResource.Cache
+\\vmware-host\Shared Folders\Downloads\Coding\full-stack-dot-net-developer-architecture-testing\3-exercise-files\Before\GigHub\obj\Debug\GigHub.dll
+\\vmware-host\Shared Folders\Downloads\Coding\full-stack-dot-net-developer-architecture-testing\3-exercise-files\Before\GigHub\obj\Debug\GigHub.pdb

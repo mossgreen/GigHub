@@ -1,24 +1,22 @@
-﻿using System;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
-using GigHub.Models;
-using System.Data.Entity;
+﻿using GigHub.Models;
 using GigHub.ViewModels;
+using System;
+using System.Data.Entity;
+using System.Linq;
+using System.Web.Mvc;
 using Microsoft.AspNet.Identity;
-
 
 namespace GigHub.Controllers
 {
     public class HomeController : Controller
     {
-
-        public ApplicationDbContext _context;
+        private ApplicationDbContext _context;
 
         public HomeController()
         {
             _context = new ApplicationDbContext();
         }
+
         public ActionResult Index(string query = null)
         {
             var upcomingGigs = _context.Gigs
@@ -29,17 +27,17 @@ namespace GigHub.Controllers
             if (!String.IsNullOrWhiteSpace(query))
             {
                 upcomingGigs = upcomingGigs
-                    .Where(g => g.Artist.Name.Contains(query) ||
-                                g.Genre.Name.Contains(query) ||
-                                g.Venue.Contains(query));
+                    .Where(g =>
+                            g.Artist.Name.Contains(query) ||
+                            g.Genre.Name.Contains(query) ||
+                            g.Venue.Contains(query));
             }
 
             var userId = User.Identity.GetUserId();
             var attendances = _context.Attendances
                 .Where(a => a.AttendeeId == userId && a.Gig.DateTime > DateTime.Now)
                 .ToList()
-                .ToLookup(a => a.GigId); //return a hash table 
-                    
+                .ToLookup(a => a.GigId);
 
             var viewModel = new GigsViewModel
             {
@@ -50,7 +48,6 @@ namespace GigHub.Controllers
                 Attendances = attendances
             };
 
-            //go to the view of Gigs if shared folder
             return View("Gigs", viewModel);
         }
 

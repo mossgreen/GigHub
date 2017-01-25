@@ -27,17 +27,17 @@ namespace GigHub.ViewModels
         public byte Genre { get; set; }
 
         public IEnumerable<Genre> Genres { get; set; }
-
+        
         public string Heading { get; set; }
-
+        
         public string Action
         {
             get
             {
-                Expression<Func<GigsController, ActionResult>> update =
+                Expression<Func<GigsController, ActionResult>> update = 
                     (c => c.Update(this));
 
-                Expression<Func<GigsController, ActionResult>> create =
+                Expression<Func<GigsController, ActionResult>> create = 
                     (c => c.Create(this));
 
                 var action = (Id != 0) ? update : create;

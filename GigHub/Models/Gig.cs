@@ -2,9 +2,7 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel.DataAnnotations;
-using System.Data;
 using System.Linq;
-using System.Web;
 
 namespace GigHub.Models
 {
@@ -14,7 +12,6 @@ namespace GigHub.Models
 
         public bool IsCanceled { get; private set; }
 
-        
         public ApplicationUser Artist { get; set; }
 
         [Required]
@@ -31,7 +28,7 @@ namespace GigHub.Models
         [Required]
         public byte GenreId { get; set; }
 
-        public ICollection<Attendance> Attendances { get; private set ; }
+        public ICollection<Attendance> Attendances { get; private set; }
 
         public Gig()
         {
@@ -42,29 +39,24 @@ namespace GigHub.Models
         {
             IsCanceled = true;
 
-            //if gig is cancelled, create a notification
-            var notification =  Notification.GigCanceled(this);
+            var notification = Notification.GigCanceled(this);
 
-            //iterate attendees, create notification for each of them
             foreach (var attendee in Attendances.Select(a => a.Attendee))
             {
                 attendee.Notify(notification);
             }
-
         }
 
         public void Modify(DateTime dateTime, string venue, byte genre)
         {
-            var notification =  Notification.GigUpdated(this,DateTime, Venue);
+            var notification = Notification.GigUpdated(this, DateTime, Venue);
 
-            Venue =  Venue;
+            Venue = venue;
             DateTime = dateTime;
             GenreId = genre;
 
             foreach (var attendee in Attendances.Select(a => a.Attendee))
-            {
                 attendee.Notify(notification);
-            }
-        }                                
+        }
     }
 }
