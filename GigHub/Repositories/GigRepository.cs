@@ -16,6 +16,14 @@ namespace GigHub.Repositories
             this._context = _context;
         }
 
+        public Gig GetGig(int id)
+        {
+            return _context.Gigs
+                   .Include(g => g.Artist)
+                   .Include(g => g.Genre)
+                   .SingleOrDefault(g => g.Id == id);
+        }
+
         public IEnumerable<Gig> GetGigsUserAttending(string userId)
         {
             return _context.Attendances
@@ -31,6 +39,17 @@ namespace GigHub.Repositories
             return _context.Gigs
                .Include(g => g.Attendances.Select(a => a.Attendee))
                .SingleOrDefault(g => g.Id == gigId );
+        }
+
+        public IEnumerable<Gig> GetUpcomingGigsByArtist(string userId)
+        {
+            return _context.Gigs
+                .Where(g =>
+                    g.ArtistId == userId &&
+                    g.DateTime > DateTime.Now &&
+                    !g.IsCanceled)
+                .Include(g => g.Genre)
+                .ToList();
         }
     }
 }
