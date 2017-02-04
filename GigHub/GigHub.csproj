@@ -256,6 +256,10 @@
     <Compile Include="Repositories\FollowingRepository.cs" />
     <Compile Include="Repositories\GenreRepository.cs" />
     <Compile Include="Repositories\GigRepository.cs" />
+    <Compile Include="Repositories\IAttendanceRepository.cs" />
+    <Compile Include="Repositories\IFollowingRepository.cs" />
+    <Compile Include="Repositories\IGenreRepository.cs" />
+    <Compile Include="Repositories\IGigRepository.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="ViewModels\FutureDate.cs" />
     <Compile Include="ViewModels\GigDetailsViewModel.cs" />
