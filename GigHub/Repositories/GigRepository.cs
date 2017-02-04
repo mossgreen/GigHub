@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using System.Web;
-using GigHub.Models;
+using GigHub.Core.Models;
 
 namespace GigHub.Repositories
 {

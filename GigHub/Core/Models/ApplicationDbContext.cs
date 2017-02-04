@@ -1,7 +1,7 @@
-﻿using Microsoft.AspNet.Identity.EntityFramework;
-using System.Data.Entity;
+﻿using System.Data.Entity;
+using Microsoft.AspNet.Identity.EntityFramework;
 
-namespace GigHub.Models
+namespace GigHub.Core.Models
 {
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
