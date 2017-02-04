@@ -1,8 +1,8 @@
-﻿using System.Linq;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using System.Linq;
 using GigHub.Core.Models;
 
-namespace GigHub.ViewModels
+namespace GigHub.Core.ViewModels
 {
     public class GigsViewModel
     {

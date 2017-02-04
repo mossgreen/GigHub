@@ -1,4 +1,5 @@
 using GigHub.Core.Models;
+using GigHub.Persistence;
 
 namespace GigHub.Migrations
 {
@@ -12,6 +13,7 @@ namespace GigHub.Migrations
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
+            MigrationsDirectory = @"Persistence\Migrations";
         }
 
         protected override void Seed(ApplicationDbContext context)

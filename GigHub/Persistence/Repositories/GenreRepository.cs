@@ -1,10 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 using GigHub.Core.Models;
+using GigHub.Core.Repositories;
 
-namespace GigHub.Repositories
+namespace GigHub.Persistence.Repositories
 {
     public class GenreRepository : IGenreRepository
     {
