@@ -146,3 +146,14 @@ C:\Projects\GigHub\GigHub\bin\AutoMapper.xml
 \\vmware-host\Shared Folders\Downloads\Coding\full-stack-dot-net-developer-architecture-testing\3-exercise-files\Before\GigHub\obj\Debug\GigHub.csproj.GenerateResource.Cache
 \\vmware-host\Shared Folders\Downloads\Coding\full-stack-dot-net-developer-architecture-testing\3-exercise-files\Before\GigHub\obj\Debug\GigHub.dll
 \\vmware-host\Shared Folders\Downloads\Coding\full-stack-dot-net-developer-architecture-testing\3-exercise-files\Before\GigHub\obj\Debug\GigHub.pdb
+C:\Projects\GigHub\GigHub\bin\Ninject.dll
+C:\Projects\GigHub\GigHub\bin\Ninject.Extensions.Conventions.dll
+C:\Projects\GigHub\GigHub\bin\Ninject.Web.Common.dll
+C:\Projects\GigHub\GigHub\bin\Ninject.Web.Mvc.dll
+C:\Projects\GigHub\GigHub\bin\Ninject.Web.WebApi.dll
+C:\Projects\GigHub\GigHub\bin\WebActivatorEx.dll
+C:\Projects\GigHub\GigHub\bin\Ninject.xml
+C:\Projects\GigHub\GigHub\bin\Ninject.Extensions.Conventions.xml
+C:\Projects\GigHub\GigHub\bin\Ninject.Web.Common.xml
+C:\Projects\GigHub\GigHub\bin\Ninject.Web.Mvc.xml
+C:\Projects\GigHub\GigHub\bin\Ninject.Web.WebApi.xml
