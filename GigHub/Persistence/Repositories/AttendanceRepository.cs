@@ -30,5 +30,15 @@ namespace GigHub.Persistence.Repositories
                .SingleOrDefault(a => a.GigId == gigId && a.AttendeeId == userId);
 
         }
+
+        public void Add(Attendance attendance)
+        {
+            _context.Attendances.Add(attendance);
+        }
+
+        public void Remove(Attendance attendance)
+        {
+            _context.Attendances.Remove(attendance);
+        }
     }
 }
