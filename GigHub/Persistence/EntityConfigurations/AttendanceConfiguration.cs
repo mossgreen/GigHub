@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using GigHub.Core.Models;
 using System.Data.Entity.ModelConfiguration;
-using System.Linq;
-using System.Web;
-using GigHub.Core.Models;
 
 namespace GigHub.Persistence.EntityConfigurations
 {
@@ -11,7 +7,7 @@ namespace GigHub.Persistence.EntityConfigurations
     {
         public AttendanceConfiguration()
         {
-            HasKey(a => new {a.GigId, a.AttendeeId});
+            HasKey(a => new { a.GigId, a.AttendeeId });
         }
     }
 }

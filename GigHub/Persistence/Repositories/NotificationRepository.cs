@@ -1,10 +1,8 @@
-﻿using System;
+﻿using GigHub.Core.Models;
+using GigHub.Core.Repositories;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
-using System.Web;
-using GigHub.Core.Models;
-using GigHub.Core.Repositories;
 
 namespace GigHub.Persistence.Repositories
 {
@@ -12,7 +10,7 @@ namespace GigHub.Persistence.Repositories
     {
         private readonly ApplicationDbContext _context;
 
-        public NotificationRepository( ApplicationDbContext context)
+        public NotificationRepository(ApplicationDbContext context)
         {
             _context = context;
         }

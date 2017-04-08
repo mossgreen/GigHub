@@ -1,4 +1,5 @@
-﻿using GigHub.Core.Repositories;
+﻿using GigHub.Core.Dtos;
+using GigHub.Core.Repositories;
 
 namespace GigHub.Core
 {

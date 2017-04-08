@@ -1,16 +1,17 @@
-﻿using GigHub.Persistence;
+﻿using GigHub.Core;
+using GigHub.Core.Models;
+using GigHub.Core.ViewModels;
+using GigHub.Persistence;
 using Microsoft.AspNet.Identity;
 using System.Linq;
 using System.Web.Mvc;
-using GigHub.Core;
-using GigHub.Core.Models;
-using GigHub.Core.ViewModels;
 
 namespace GigHub.Controllers
 {
     public class GigsController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;
+
         public GigsController(IUnitOfWork unitOfWork)
         {
             _unitOfWork = unitOfWork;
@@ -29,10 +30,10 @@ namespace GigHub.Controllers
             {
                 var userId = User.Identity.GetUserId();
 
-                viewModel.IsAttending =
+                viewModel.IsAttending = 
                     _unitOfWork.Attendances.GetAttendance(gig.Id, userId) != null;
 
-                viewModel.IsFollowing =
+                viewModel.IsFollowing = 
                     _unitOfWork.Followings.GetFollowing(userId, gig.ArtistId) != null;
             }
 
@@ -153,7 +154,7 @@ namespace GigHub.Controllers
                 return new HttpUnauthorizedResult();
 
             gig.Modify(viewModel.GetDateTime(), viewModel.Venue, viewModel.Genre);
-
+            
             _unitOfWork.Complete();
 
             return RedirectToAction("Mine", "Gigs");

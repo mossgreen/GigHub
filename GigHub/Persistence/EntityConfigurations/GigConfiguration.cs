@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
 using System.Data.Entity.ModelConfiguration;
-using System.Linq;
-using System.Web;
 using GigHub.Core.Models;
 
 namespace GigHub.Persistence.EntityConfigurations
@@ -21,10 +17,10 @@ namespace GigHub.Persistence.EntityConfigurations
                 .IsRequired()
                 .HasMaxLength(255);
 
-
             HasMany(g => g.Attendances)
                 .WithRequired(a => a.Gig)
                 .WillCascadeOnDelete(false);
         }
+        
     }
 }

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using GigHub.Core.Dtos;
 using GigHub.Core.Models;
 using GigHub.Core.Repositories;
 
@@ -10,13 +11,11 @@ namespace GigHub.Persistence.Repositories
     {
         private readonly ApplicationDbContext _context;
 
-        public AttendanceRepository(ApplicationDbContext _context)
+        public AttendanceRepository(ApplicationDbContext context)
         {
-            this._context = _context;
+            _context = context;
         }
 
-        /*return type should not be list, 
-         IE allow us to iterator amony attendances*/
         public IEnumerable<Attendance> GetFutureAttendances(string userId)
         {
             return _context.Attendances
@@ -24,11 +23,10 @@ namespace GigHub.Persistence.Repositories
                 .ToList();
         }
 
-       public Attendance GetAttendance(int gigId, string userId)
+        public Attendance GetAttendance(int gigId, string userId)
         {
-           return  _context.Attendances
-               .SingleOrDefault(a => a.GigId == gigId && a.AttendeeId == userId);
-
+            return _context.Attendances
+                .SingleOrDefault(a => a.GigId == gigId && a.AttendeeId == userId);
         }
 
         public void Add(Attendance attendance)

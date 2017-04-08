@@ -1,13 +1,9 @@
-﻿using Microsoft.AspNet.Identity;
-using System.Linq;
+﻿using GigHub.Core;
+using Microsoft.AspNet.Identity;
 using System.Web.Mvc;
-using GigHub.Core;
-using GigHub.Core.Models;
-using GigHub.Persistence;
 
 namespace GigHub.Controllers
 {
-
     public class FolloweesController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;
